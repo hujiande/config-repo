@@ -1,0 +1,62 @@
+server:
+  connection-timeout: 60000
+  port: 6000
+  tomcat:
+    max-thread: 4
+  ssl:
+    key-store:  classpath:sample.jks
+    key-store-password: secret
+    key-password: password
+  session:
+    timeout: 1200
+spring:
+  session:
+    store-type: redis
+  messages:
+    basename: i18 fadn/messages
+    encoding: UTF-8
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 18000
+zuul:
+  sensitive-headers:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+management:
+  security.enabled: false
+logging:
+  path: log/
+security:
+  basic:
+    enabled: false
+  sessions: always
+endpoints:
+  shutdown:
+    enabled: true
+    sensitive: false
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000 #缺省为1000
+  threadpool:
+    default:
+      coreSize: 200 ##并发执行的最大线程数，默认10
+      maxQueueSize: 200 ##BlockingQueue的最大队列数
+      queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          strategy: THREAD
+          semaphore:
+            maxConcurrentRequests: 1000
+          thread:
+            timeoutInMilliseconds: 30000
