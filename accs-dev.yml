@@ -23,7 +23,7 @@ spring:
     timeout: 18000
     
 server:
-  port: 5001
+  port: 6001
   
 security:
   basic:
