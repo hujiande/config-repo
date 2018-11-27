@@ -21,7 +21,10 @@ spring:
     host: localhost
     port: 6379
     timeout: 18000
-      
+    
+server:
+  port: 5001
+  
 security:
   basic:
     enabled: false
