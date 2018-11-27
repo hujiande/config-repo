@@ -1,3 +1,32 @@
-fund:
-  FundSummaryAcctNo: FundSummaryAcctNo
-  
+spring:
+  datasource:
+    data:
+    - classpath:data01.sql
+    url: jdbc:mysql://47.100.183.250:3306/wx
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    sql-script-encoding: utf-8
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+    virtual-host: /dev
+  zipkin:
+    enabled: false
+  session:
+    store-type: hash-map
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 18000
+      
+security:
+  basic:
+    enabled: false
+#统一会员账户信息
+wxsmk:
+  summary-account: 1234567890
