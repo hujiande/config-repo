@@ -1,7 +1,5 @@
 spring:
   datasource:
-    data:
-    - classpath:data01.sql
     url: jdbc:mysql://47.100.183.250:3306/wx
     username: root
     password: 123456
