@@ -9,7 +9,7 @@ spring:
     hibernate:
       ddl-auto: update
   rabbitmq:
-    host: localhost
+    host: 47.100.183.250
     port: 5672
     username: guest
     password: guest
@@ -19,7 +19,7 @@ spring:
   session:
     store-type: hash-map
   redis:
-    host: localhost
+    host: 47.100.183.250
     port: 6379
     timeout: 18000
     
