@@ -1,4 +1,7 @@
-  datasource:
+eureka:
+  client:
+    enabled: true
+datasource:
 #    data:
 #    - classpath:initData.sql
     url: jdbc:mysql://47.100.183.250:3306/wx
