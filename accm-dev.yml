@@ -26,10 +26,10 @@ eureka:
     host: localhost
     port: 6379
     timeout: 18000
-      
+server:
+  port: 6002
 security:
   basic:
     enabled: false
-#统一会员账户信息
 wxsmk:
   summary-account: 1234567890
