@@ -1,0 +1,40 @@
+eureka:
+  client:
+    enabled: true  
+
+spring:
+  cloud:
+    config:
+      uri: http://config:5001 #这个地址会在无法通过注册中心找到config server时生效，避免注册中心的响应时间慢导致的服务启动失败
+      discovery:
+        enabled: true                                 # 默认false，设为true表示使用注册中心中的configserver配置而不自己配置configserver的uri
+        serviceId: config-server                      # 指定config server在服务发现中的serviceId，默认为：configserver
+  datasource:
+    url: jdbc:mysql://mysql:3306/accssit
+    username: accs
+    password: accs
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: rabbit
+    username: admin
+    password: admin
+    virtual-host: /accs
+  zipkin:
+    enabled: false
+  session:
+    store-type: hash-map
+  redis:
+    host: redis
+    port: 6379
+    timeout: 18000
+      
+security:
+  basic:
+    enabled: false
+    
+#统一会员账户信息
+wxsmk:
+  summary-account: 1234567890
