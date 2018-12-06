@@ -21,7 +21,7 @@ spring:
     port: 5672
     username: admin
     password: admin
-    virtual-host: /collect
+    virtual-host: /dev
 management:
   security.enabled: false
 logging:
