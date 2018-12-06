@@ -5,7 +5,7 @@ eureka:
   datasource:
 #    data:
 #    - classpath:initData.sql
-    url: jdbc:mysql://47.100.183.250:3307/wx
+    url: jdbc:mysql://47.100.183.250:3306/wx
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
