@@ -37,5 +37,5 @@ security:
 #统一会员账户信息
 wxsmk:
   summary-account: 1234567890
-  uid:Z32081
-  mrchCode:3450
+  uid: Z32081
+  mrchCode: 3450
