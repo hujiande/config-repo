@@ -5,7 +5,7 @@ spring:
 #     password: 123456
 #     driver-class-name: com.mysql.jdbc.Driver
 #     sql-script-encoding: utf-8
-    url: jdbc:mysql://47.100.183.250:3306/wx
+    url: jdbc:mysql://47.100.183.250:3306/wuxi
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
