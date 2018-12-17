@@ -15,7 +15,7 @@ spring:
     host: localhost
     username: guest
     password: guest
-    virtual-host: /accs
+    virtual-host: /dev
   zipkin:
     enabled: false
   session:
