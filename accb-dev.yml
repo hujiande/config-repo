@@ -5,28 +5,28 @@ eureka:
 spring:
   cloud:
     config:
-      uri: http://config:5001 #这个地址会在无法通过注册中心找到config server时生效，避免注册中心的响应时间慢导致的服务启动失败
+      uri: http://47.100.183.250:5001 #这个地址会在无法通过注册中心找到config server时生效，避免注册中心的响应时间慢导致的服务启动失败
       discovery:
-        enabled: true                                 # 默认false，设为true表示使用注册中心中的configserver配置而不自己配置configserver的uri
+        enabled: false                                 # 默认false，设为true表示使用注册中心中的configserver配置而不自己配置configserver的uri
         serviceId: config-server                      # 指定config server在服务发现中的serviceId，默认为：configserver
   datasource:
-    url: jdbc:mysql://mysql:3306/accssit
-    username: accs
-    password: accs
+    url: jdbc:mysql://47.100.183.250:3306/wuxi
+    username: root
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
-  rabbitmq:
+  rabbitmq: localhost
     host: rabbit
-    username: admin
-    password: admin
+    username: guest
+    password: guest
     virtual-host: /accs
   zipkin:
     enabled: false
   session:
     store-type: hash-map
-  redis:
+  redis: localhost
     host: redis
     port: 6379
     timeout: 18000
