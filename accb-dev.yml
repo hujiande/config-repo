@@ -26,7 +26,10 @@ spring:
     timeout: 18000
 server:
   port: 6003
-  
+ 
+batch:
+  job:
+    enabled: false
 security:
   basic:
     enabled: false
