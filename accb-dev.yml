@@ -3,6 +3,9 @@ eureka:
     enabled: true  
 
 spring:
+  batch:
+    job:
+      enabled: false
   datasource:
     url: jdbc:mysql://47.100.183.250:3306/wuxi
     username: root
@@ -26,10 +29,7 @@ spring:
     timeout: 18000
 server:
   port: 6003
- 
-batch:
-  job:
-    enabled: false
+  
 security:
   basic:
     enabled: false
