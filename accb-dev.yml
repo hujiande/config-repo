@@ -37,3 +37,9 @@ security:
 #统一会员账户信息
 wxsmk:
   summary-account: 1234567890
+  fileuploadpath: /home/appusr/upload
+  localpath: d:/
+  host: 47.100.183.250
+  port: 22
+  username: root
+  password: 745201qq.hjd
