@@ -7,10 +7,15 @@ spring:
     job:
       enabled: false
   datasource:
-    url: jdbc:mysql://47.100.183.250:3306/wuxi
-    username: root
-    password: 123456
+#     url: jdbc:mysql://47.100.183.250:3306/wuxi
+#     username: root
+#     password: 123456
+#     driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.40.0.65:3308/accssit
+    username: accs
+    password: accs
     driver-class-name: com.mysql.jdbc.Driver
+    sql-script-encoding: utf-8
   jpa:
     hibernate:
       ddl-auto: update
