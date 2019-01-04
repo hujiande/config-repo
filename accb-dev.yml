@@ -51,5 +51,5 @@ pays:
   password: 745201qq.hjd
 dd:
   webhook: https://oapi.dingtalk.com/robot/send?access_token=
-  tokens: b7ffb954a29957634ad7bed3644be2916825c4f6bdfb198e94b44d43251699bd,f210f643acbf49cbeba6218a9ad0d1bc497cf9b242af8df1fb415f43eb260dd3
+  tokens: f210f643acbf49cbeba6218a9ad0d1bc497cf9b242af8df1fb415f43eb260dd3
   mobiles: 18601634193
