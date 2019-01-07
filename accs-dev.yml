@@ -41,3 +41,5 @@ wxsmk:
   guarantSubAcct: 3450000000000005
   tranWebName: 惠民优选
   configpath: D:\\wuxi\\accs\\accs-boot\\src\\main\\resources\\config.properties
+logging:
+  config: classpath:logback.xml
