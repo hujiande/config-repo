@@ -45,3 +45,4 @@ logging:
   config: classpath:logback.xml
 pay:
   reqUrl: ww
+  partnerId: s
