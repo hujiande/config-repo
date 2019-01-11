@@ -44,5 +44,6 @@ wxsmk:
 logging:
   config: classpath:logback.xml
 pay:
-  reqUrl: ww
-  partnerId: s
+  reqUrl: https://citycard-stg.pingan.com.cn
+  partnerId: bbd0762a34f045f28e150e9b3f71cbeb
+  key: 30ca0fd6c3d6415faaab27cd1d9799cc
