@@ -43,3 +43,5 @@ wxsmk:
   configpath: D:\\wuxi\\accs\\accs-boot\\src\\main\\resources\\config.properties
 logging:
   config: classpath:logback.xml
+pay:
+  reqUrl: ww
