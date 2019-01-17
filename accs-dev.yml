@@ -8,7 +8,7 @@ spring:
   username: accs
   password: accs
   driver-class-name: com.mysql.jdbc.Driver
-    sql-script-encoding: utf-8
+  sql-script-encoding: utf-8
   jpa:
     hibernate:
       ddl-auto: update
